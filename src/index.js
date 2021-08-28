@@ -48,7 +48,7 @@ if (e.target.checked){
   }
   
   
-  storageValue === null ? body.classList.add(LIGHT) : localStorage.value;
+  storageValue === null ? body.classList.add(LIGHT) : storageValue;
  
   if(storageValue === "dark"){
     body.classList.add(DARK);
