@@ -29,31 +29,34 @@ const {LIGHT, DARK} = Theme;
 
 //   console.log(storageValue);
 
+
   function changeTheme (e) {
  
 if (e.target.checked){
-    // body.classList.remove(LIGHT);
-    // body.classList.add(DARK);
-    body.classList.replace(LIGHT, DARK);
+    body.classList.remove(LIGHT);
+    body.classList.add(DARK);
+    // body.classList.replace(LIGHT, DARK);
 
     localStorage.setItem("theme", "dark");
 } else {
-    // body.classList.remove(DARK);
-    // body.classList.add(LIGHT);
-    body.classList.replace(DARK, LIGHT);
+    body.classList.remove(DARK);
+    body.classList.add(LIGHT);
+    // body.classList.replace(DARK, LIGHT);
     localStorage.setItem("theme", "light");
     
 }
   }
   
+  
+  storageValue === null ? body.classList.add(LIGHT) : localStorage.value;
+ 
   if(storageValue === "dark"){
     body.classList.add(DARK);
     checkbox.checked = "true"};
-
-    if(storageValue === null){
-        body.classList.add(LIGHT);
-        checkbox.checked = "false"};
-
+  
+  //   if(storageValue === null){
+  //       body.classList.add(LIGHT);
+  //       checkbox.checked = "false"};
 
 
 
